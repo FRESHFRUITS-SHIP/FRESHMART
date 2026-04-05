@@ -598,7 +598,7 @@ function sendWhatsApp(){
   let msg='🌿 *FreshMart Order*\n\n';
   if(keys.length){keys.forEach(k=>{const{fruit,qty}=cart[k];msg+=fruit.emoji+' '+fruit.name+' x'+qty+' = ₹'+(fruit.price*qty)+'\n';});const t=keys.reduce((s,k)=>s+cart[k].fruit.price*cart[k].qty,0);msg+='\n💰 *Total: ₹'+(t+40)+'* (incl. ₹40 delivery)\n📍 Delivering to my address\n\nPlease confirm! 🙏';}
   else msg='🌿 Hi FreshMart! I want to place an order. Please share today\'s fruit list 🍎';
-  window.open('https://wa.me/919768900183?text='+encodeURIComponent(msg),'_blank');
+  window.open('https://wa.me/919768900193?text='+encodeURIComponent(msg),'_blank');
 }
 function adminTab(id,el){
   document.querySelectorAll('.admin-tab').forEach(t=>t.classList.remove('active'));
